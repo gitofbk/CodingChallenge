@@ -3,13 +3,19 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="module.PartB_TWO">
+      <class name="module.PartA">
         <methods>
-          <include name="testB"/>
-          <include name="afterTest"/>
+          <include name="beforeMethod"/>
+          <include name="test"/>
+          <include name="beforeClass"/>
           <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+          <include name="afterTest"/>
         </methods>
-      </class> <!-- module.PartB_TWO -->
+      </class> <!-- module.PartA -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
