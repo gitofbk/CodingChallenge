@@ -7,7 +7,8 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
-import org.testng.annotations.AfterTest;
+import org.testng.annotations.AfterMethod;
+
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -41,8 +42,8 @@ public class PartB_TWO {
 		s="Bangalore is in India";
 	}
 
-	@AfterTest
-	public void afterTest() {
+	@AfterMethod
+	public void aftermethod() {
 		
 		System.out.println("__________________________________________");
 	}

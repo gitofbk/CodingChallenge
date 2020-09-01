@@ -1,29 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="57" started-at="2020-09-02T01:32:48 IST" finished-at="2020-09-02T01:32:48 IST">
+  <suite name="Suite" duration-ms="53" started-at="2020-09-02T02:41:55 IST" finished-at="2020-09-02T02:41:55 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="57" started-at="2020-09-02T01:32:48 IST" finished-at="2020-09-02T01:32:48 IST">
-      <class name="module.PartB_TWO">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:module.PartB_TWO@627551fb]" name="beforeTest" is-config="true" duration-ms="12" started-at="2020-09-02T01:32:48 IST" finished-at="2020-09-02T01:32:48 IST">
+    <test name="Test" duration-ms="53" started-at="2020-09-02T02:41:55 IST" finished-at="2020-09-02T02:41:55 IST">
+      <class name="module.PARTA">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:module.PARTA@627551fb]" name="beforeTest" is-config="true" duration-ms="9" started-at="2020-09-02T02:41:55 IST" finished-at="2020-09-02T02:41:55 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="testA()[pri:0, instance:module.PartB_TWO@627551fb]" name="testA" duration-ms="9" started-at="2020-09-02T01:32:48 IST" finished-at="2020-09-02T01:32:48 IST">
+        <test-method status="PASS" signature="test1()[pri:0, instance:module.PARTA@627551fb]" name="test1" duration-ms="6" started-at="2020-09-02T02:41:55 IST" finished-at="2020-09-02T02:41:55 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testA -->
-        <test-method status="PASS" signature="testB()[pri:0, instance:module.PartB_TWO@627551fb]" name="testB" duration-ms="2" started-at="2020-09-02T01:32:48 IST" finished-at="2020-09-02T01:32:48 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testB -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:module.PartB_TWO@627551fb]" name="afterTest" is-config="true" duration-ms="0" started-at="2020-09-02T01:32:48 IST" finished-at="2020-09-02T01:32:48 IST">
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:module.PARTA@627551fb]" name="afterTest" is-config="true" duration-ms="0" started-at="2020-09-02T02:41:55 IST" finished-at="2020-09-02T02:41:55 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- module.PartB_TWO -->
+      </class> <!-- module.PARTA -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
