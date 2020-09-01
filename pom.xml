@@ -1,0 +1,17 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>CodingChallenge2020</groupId>
+  <artifactId>CodingChallenge2020</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Coffe Beans</name>
+  <description>2020</description>
+  <dependencies>
+  	<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+	<dependency>
+    	<groupId>org.testng</groupId>
+    	<artifactId>testng</artifactId>
+    	<version>7.1.0</version>
+    	<scope>test</scope>
+	</dependency>
+  </dependencies>
+</project>	
