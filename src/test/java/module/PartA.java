@@ -9,6 +9,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import pages.HomePage;
+import pages.ResultPage;
 import utility.TestScript;
 
 import org.testng.annotations.BeforeMethod;
@@ -24,24 +25,29 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.AfterTest;
 
 public class PartA  extends TestScript {
-	 WebDriver driver;
-	 HomePage homepage;
-	 String url ="https://www.cleartrip.com/";
+	 
+	 
 	 
 	 
   @Test
   public void test() {
+	  WebDriver driver=getDriver();
+	  HomePage homepage=new HomePage(driver);;
 	  homepage.navigateToFlight();
 	  homepage.selectRoundTrip();
 	  homepage.enterFrom("Delhi");
 	  homepage.selectFrom(1);
 	  homepage.enterTo("Bangalore");
 	  homepage.selectTo(2);
-	  homepage.selectDepartureDate("02/09/2020");
+	  homepage.selectDepartureDate("03/09/2020");
 	  homepage.selectReturnDate("10/09/2020");
 	  homepage.search();
+	  ResultPage resultpage=new ResultPage(driver);
+	  resultpage.printOnViewDetails();
+	  
   }
-  @BeforeMethod
+  
+@BeforeMethod
   public void beforeMethod() {
   }
 
@@ -59,14 +65,7 @@ public class PartA  extends TestScript {
 
   @BeforeTest
   public void beforeTest() {
-	  System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver");
-	  driver= new ChromeDriver();
-	  driver.get(url);
-	  driver.manage().window().maximize();
-	  driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	  
-	  
-	  homepage=new HomePage(driver);
   }
 
   @AfterTest
